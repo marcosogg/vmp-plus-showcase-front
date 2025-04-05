@@ -64,13 +64,12 @@ const LandingPage = () => {
             </Avatar>
             <p className="text-xl font-semibold mb-2">Marcos O. Gomes</p>
             <p className="text-muted-foreground text-lg mb-6">
-              Marcos is currently pursuing a Higher Diploma in Computer Science at SETU, transitioning into the tech field. 
-              This career change builds upon a strong foundation of 10 years' experience in procurement, including five 
-              years managing vendor-related projects at his previous company. VMP PLUS was born from this unique intersection 
-              of skills, allowing Marcos to leverage his deep, first-hand understanding of vendor management challenges and 
-              focus directly on the technical implementation. This real-world experience provided invaluable business context 
-              throughout the project's development.
-            </p>
+            I bring a unique perspective to VMP PLUS, combining my emerging tech skills with a decade of hands-on procurement experience. 
+            The project's core concept originated from real-world vendor management challenges I identified and worked to solve over 1.5 years
+             in my previous corporate procurement role. During that time, I designed and proposed the initial solution, 
+             presented it internally up to the VP level, and the concept was selected for a competitive company AI hackathon (2024). 
+             This deep familiarity with the business needs and prior validation of the concept allowed me to focus my Higher Diploma efforts 
+             on the technical implementation, ensuring VMP PLUS is a practical tool grounded in significant real-world experience.
             <Button variant="outline" asChild className="gap-2">
               <a 
                 href="https://www.linkedin.com/in/marcosogomes/" 
