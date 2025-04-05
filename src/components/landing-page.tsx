@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -109,6 +108,18 @@ const LandingPage = () => {
               title="Performance Monitoring"
               description="Monitor vendor performance against key metrics and SLAs."
             />
+          </div>
+        </section>
+
+        {/* Project Demonstration Video */}
+        <section className="mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Project Demonstration</h2>
+          <div className="max-w-4xl mx-auto">
+            <video 
+              src="/ProcurementVMP.mp4" 
+              controls
+              className="w-full aspect-video rounded-lg shadow-md"
+            ></video>
           </div>
         </section>
 
