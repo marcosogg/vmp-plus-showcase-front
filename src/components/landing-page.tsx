@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -134,7 +133,7 @@ const LandingPage = () => {
                 className="bg-muted/50 rounded-lg p-4 flex flex-col items-center justify-center text-center hover:bg-muted/80 transition-colors"
               >
                 <img
-                  src={`/${tech.toLowerCase().replace(" ", "")}.svg`}
+                  src={tech === "shadcn/ui" ? "/shadcnui.svg" : `/${tech.toLowerCase().replace(/\s+/g, "")}.svg`}
                   alt={`${tech} Logo`}
                   className="h-12 w-12 mb-2"
                 />
