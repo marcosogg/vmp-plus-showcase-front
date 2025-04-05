@@ -1,7 +1,7 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { 
   Github, 
   ExternalLink, 
@@ -10,7 +10,8 @@ import {
   Database, 
   Zap, 
   CalendarDays, 
-  Activity 
+  Activity,
+  Linkedin
 } from "lucide-react";
 
 const LandingPage = () => {
@@ -51,6 +52,35 @@ const LandingPage = () => {
               enabling businesses to efficiently manage vendors, contracts, and performance metrics 
               all in one place.
             </p>
+          </div>
+        </section>
+
+        {/* About the Developer */}
+        <section className="mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">About the Developer</h2>
+            <Avatar className="h-32 w-32 mx-auto mb-4">
+              <AvatarFallback className="text-2xl">MG</AvatarFallback>
+            </Avatar>
+            <p className="text-xl font-semibold mb-2">Marcos O. Gomes</p>
+            <p className="text-muted-foreground text-lg mb-6">
+              Marcos is currently pursuing a Higher Diploma in Computer Science at SETU, transitioning into the tech field. 
+              This career change builds upon a strong foundation of 10 years' experience in procurement, including five 
+              years managing vendor-related projects at his previous company. VMP PLUS was born from this unique intersection 
+              of skills, allowing Marcos to leverage his deep, first-hand understanding of vendor management challenges and 
+              focus directly on the technical implementation. This real-world experience provided invaluable business context 
+              throughout the project's development.
+            </p>
+            <Button variant="outline" asChild className="gap-2">
+              <a 
+                href="https://www.linkedin.com/in/marcosogomes/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Linkedin size={18} />
+                Connect on LinkedIn
+              </a>
+            </Button>
           </div>
         </section>
 
