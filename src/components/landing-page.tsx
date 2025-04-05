@@ -107,7 +107,7 @@ const LandingPage = () => {
             </CardHeader>
             <CardContent>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white" asChild>
-                <a href="#github-link">View GitHub Repo</a>
+                <a href="https://github.com/marcosogg/vmpplus-hdip-final-project">View GitHub Repo</a>
               </Button>
             </CardContent>
           </Card>
@@ -127,7 +127,7 @@ const LandingPage = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4">Resources</h3>
               <ul className="space-y-2">
-                <FooterLink icon={<Github size={18} />} text="GitHub Repository" href="#github-link" />
+                <FooterLink icon={<Github size={18} />} text="GitHub Repository" href="https://github.com/marcosogg/vmpplus-hdip-final-project" />
                 <FooterLink icon={<ExternalLink size={18} />} text="Live Demo" href="#demo-link" />
                 <FooterLink icon={<Youtube size={18} />} text="Video Demonstration" href="#video-link" />
                 <FooterLink icon={<FileText size={18} />} text="Project Report" href="#report-link" />
