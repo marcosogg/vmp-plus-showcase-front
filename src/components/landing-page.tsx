@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { 
   Github, 
   ExternalLink, 
@@ -60,6 +60,7 @@ const LandingPage = () => {
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">About the Developer</h2>
             <Avatar className="h-32 w-32 mx-auto mb-4">
+              <AvatarImage src="/avatar.PNG" alt="Marcos O. Gomes" />
               <AvatarFallback className="text-2xl">MG</AvatarFallback>
             </Avatar>
             <p className="text-xl font-semibold mb-2">Marcos O. Gomes</p>
