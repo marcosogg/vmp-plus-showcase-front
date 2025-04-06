@@ -1,8 +1,10 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Github, ExternalLink, Youtube, FileText, Database, Zap, CalendarDays, Activity, Linkedin } from "lucide-react";
+
 const LandingPage = () => {
   return <div className="min-h-screen flex flex-col">
       {/* Header Section */}
@@ -21,7 +23,7 @@ const LandingPage = () => {
                 <a href="#report-link">View Project Report</a>
               </Button>
               <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10" asChild>
-                <a href="#demo-link" className="fix the button, the text is the same color as the bg\n">Live Demo</a>
+                <a href="#demo-link">Live Demo</a>
               </Button>
             </div>
             
