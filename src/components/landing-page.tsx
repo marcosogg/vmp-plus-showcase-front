@@ -1,23 +1,10 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { 
-  Github, 
-  ExternalLink, 
-  Youtube, 
-  FileText, 
-  Database, 
-  Zap, 
-  CalendarDays, 
-  Activity,
-  Linkedin
-} from "lucide-react";
-
+import { Github, ExternalLink, Youtube, FileText, Database, Zap, CalendarDays, Activity, Linkedin } from "lucide-react";
 const LandingPage = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       {/* Header Section */}
       <header className="relative bg-gradient-to-r from-blue-700 via-blue-600 to-teal-500 py-16 md:py-24">
         <div className="container mx-auto px-4">
@@ -34,15 +21,11 @@ const LandingPage = () => {
                 <a href="#report-link">View Project Report</a>
               </Button>
               <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10" asChild>
-                <a href="#demo-link">Live Demo</a>
+                <a href="#demo-link" className="fix the button, the text is the same color as the bg\n">Live Demo</a>
               </Button>
             </div>
             
-            <img 
-              src="/lovable-uploads/fee22b59-9bfe-4856-a3ec-c776db8c0af5.png" 
-              alt="VMP PLUS Project Poster - Before and After" 
-              className="mx-auto mt-12 max-w-lg rounded-lg shadow-xl"
-            />
+            <img src="/lovable-uploads/fee22b59-9bfe-4856-a3ec-c776db8c0af5.png" alt="VMP PLUS Project Poster - Before and After" className="mx-auto mt-12 max-w-lg rounded-lg shadow-xl" />
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent"></div>
@@ -80,11 +63,7 @@ const LandingPage = () => {
               on the technical implementation, ensuring VMP PLUS is a practical tool grounded in significant real-world experience.
             </p>
             <Button variant="outline" asChild className="gap-2">
-              <a 
-                href="https://www.linkedin.com/in/marcosogomes/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+              <a href="https://www.linkedin.com/in/marcosogomes/" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={18} />
                 Connect on LinkedIn
               </a>
@@ -96,26 +75,10 @@ const LandingPage = () => {
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <FeatureCard 
-              icon={<Database className="h-10 w-10 text-blue-600" />}
-              title="Centralized Vendor Data"
-              description="Easily manage and access all vendor information in one place."
-            />
-            <FeatureCard 
-              icon={<Zap className="h-10 w-10 text-blue-600" />}
-              title="Automated Workflows"
-              description="Streamline processes like vendor onboarding and contract renewals."
-            />
-            <FeatureCard 
-              icon={<FileText className="h-10 w-10 text-blue-600" />}
-              title="Contract Management"
-              description="Track contract lifecycles, key dates, and compliance requirements."
-            />
-            <FeatureCard 
-              icon={<Activity className="h-10 w-10 text-blue-600" />}
-              title="Performance Monitoring"
-              description="Monitor vendor performance against key metrics and SLAs."
-            />
+            <FeatureCard icon={<Database className="h-10 w-10 text-blue-600" />} title="Centralized Vendor Data" description="Easily manage and access all vendor information in one place." />
+            <FeatureCard icon={<Zap className="h-10 w-10 text-blue-600" />} title="Automated Workflows" description="Streamline processes like vendor onboarding and contract renewals." />
+            <FeatureCard icon={<FileText className="h-10 w-10 text-blue-600" />} title="Contract Management" description="Track contract lifecycles, key dates, and compliance requirements." />
+            <FeatureCard icon={<Activity className="h-10 w-10 text-blue-600" />} title="Performance Monitoring" description="Monitor vendor performance against key metrics and SLAs." />
           </div>
         </section>
 
@@ -123,11 +86,7 @@ const LandingPage = () => {
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Project Demonstration</h2>
           <div className="max-w-4xl mx-auto">
-            <video 
-              src="/ProcurementVMP.mp4" 
-              controls
-              className="w-full aspect-video rounded-lg shadow-md"
-            ></video>
+            <video src="/ProcurementVMP.mp4" controls className="w-full aspect-video rounded-lg shadow-md"></video>
           </div>
         </section>
 
@@ -135,19 +94,10 @@ const LandingPage = () => {
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Technologies Used</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4 max-w-4xl mx-auto">
-            {technologies.map((tech, index) => (
-              <div 
-                key={index} 
-                className="bg-muted/50 rounded-lg p-4 flex flex-col items-center justify-center text-center hover:bg-muted/80 transition-colors"
-              >
-                <img
-                  src={tech === "shadcn/ui" ? "/shadcnui.svg" : `/${tech.toLowerCase().replace(/\s+/g, "")}.svg`}
-                  alt={`${tech} Logo`}
-                  className="h-12 w-12 mb-2"
-                />
+            {technologies.map((tech, index) => <div key={index} className="bg-muted/50 rounded-lg p-4 flex flex-col items-center justify-center text-center hover:bg-muted/80 transition-colors">
+                <img src={tech === "shadcn/ui" ? "/shadcnui.svg" : `/${tech.toLowerCase().replace(/\s+/g, "")}.svg`} alt={`${tech} Logo`} className="h-12 w-12 mb-2" />
                 <div className="font-medium text-lg">{tech}</div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </section>
         
@@ -194,13 +144,15 @@ const LandingPage = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
 
 // Helper Components
-const FeatureCard = ({ icon, title, description }) => (
-  <Card className="h-full">
+const FeatureCard = ({
+  icon,
+  title,
+  description
+}) => <Card className="h-full">
     <CardHeader>
       <div className="mb-2">{icon}</div>
       <CardTitle>{title}</CardTitle>
@@ -208,27 +160,18 @@ const FeatureCard = ({ icon, title, description }) => (
     <CardContent>
       <p className="text-muted-foreground">{description}</p>
     </CardContent>
-  </Card>
-);
-
-const FooterLink = ({ icon, text, href }) => (
-  <li>
+  </Card>;
+const FooterLink = ({
+  icon,
+  text,
+  href
+}) => <li>
     <a href={href} className="flex items-center gap-2 hover:text-blue-300 transition-colors">
       {icon}
       <span>{text}</span>
     </a>
-  </li>
-);
+  </li>;
 
 // Data
-const technologies = [
-  "React", 
-  "TypeScript", 
-  "Vite", 
-  "Tailwind CSS", 
-  "shadcn/ui", 
-  "Supabase", 
-  "PostgreSQL"
-];
-
+const technologies = ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Supabase", "PostgreSQL"];
 export default LandingPage;
