@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -36,6 +37,12 @@ const LandingPage = () => {
                 <a href="#demo-link">Live Demo</a>
               </Button>
             </div>
+            
+            <img 
+              src="/lovable-uploads/fee22b59-9bfe-4856-a3ec-c776db8c0af5.png" 
+              alt="VMP PLUS Project Poster - Before and After" 
+              className="mx-auto mt-12 max-w-lg rounded-lg shadow-xl"
+            />
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent"></div>
