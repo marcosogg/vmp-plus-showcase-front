@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -12,7 +11,7 @@ const LandingPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
-              VMP PLUS
+              VMP+
             </h1>
             <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
               A full-stack web application designed to streamline and optimize vendor management processes, 
@@ -126,7 +125,7 @@ const LandingPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">VMP PLUS</h3>
+              <h3 className="text-lg font-semibold mb-4">VMP+</h3>
               <p className="text-slate-300">
                 A modern Vendor Management Programme designed to streamline vendor relationships and optimize procurement processes.
               </p>
@@ -142,7 +141,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; {new Date().getFullYear()} VMP PLUS Project. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} VMP+ Project. All rights reserved.</p>
           </div>
         </div>
       </footer>
